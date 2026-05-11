@@ -5,10 +5,12 @@ import "./app.css";
 
 export default function App() {
   return (
-    <MetaProvider>
-      <Router root={(props) => <>{props.children}</>}>
-        <FileRoutes />
-      </Router>
-    </MetaProvider>
+    <Router root={(props) => (
+      <MetaProvider>
+        {props.children}
+      </MetaProvider>
+    )}>
+      <FileRoutes />
+    </Router>
   );
 }
