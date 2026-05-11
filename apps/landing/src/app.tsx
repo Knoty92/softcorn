@@ -1,11 +1,6 @@
-import { Router } from "@solidjs/router";
-import { FileRoutes } from "@solidjs/start/router";
+import Home from "./routes/index";
 import "./app.css";
 
 export default function App() {
-  return (
-    <Router root={(props) => <>{props.children}</>}>
-      <FileRoutes />
-    </Router>
-  );
+  return <Home />;
 }
