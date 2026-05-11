@@ -1,4 +1,3 @@
-import { Title } from "@solidjs/meta";
 import { For, createSignal, onMount } from "solid-js";
 
 const services = [
@@ -30,7 +29,6 @@ export default function Home() {
 
   return (
     <main class="min-h-screen bg-surface-50 text-surface-700 bg-dots">
-      <Title>Softcorn — Digital Studio</Title>
 
       {/* Nav */}
       <nav class={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled() ? "bg-white/80 backdrop-blur-xl border-b border-surface-200" : "bg-transparent"}`}>
