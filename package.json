@@ -1,0 +1,11 @@
+{
+  "name": "softcorn",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Softcorn — Digital Studio. We build.",
+  "scripts": {
+    "dev": "cd apps/landing && pnpm dev",
+    "build": "cd apps/landing && pnpm build",
+    "start": "cd apps/landing && pnpm start"
+  }
+}
